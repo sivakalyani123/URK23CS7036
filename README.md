@@ -7,6 +7,7 @@ It provides a graphical interface with buttons and icons to navigate between dif
 **🛠️ Technologies Used**
 
 Java (JDK 8 or later)
+
 Java Swing for GUI development
 
 **🏃 How to Run the Project**
@@ -17,7 +18,7 @@ Compile and run the project using your favorite IDE (Eclipse, IntelliJ IDEA, Net
 
 **📸 Screenshots
  Home page**
- 
+ ![Image_Alt](https://github.com/sivakalyani123/Hospital_Mangement_system_URK23CS7036/blob/4a964c2fe011558d919dc2c884384173a735775f/Appointment_page.png)
 
 
 
