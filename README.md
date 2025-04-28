@@ -22,12 +22,12 @@ Compile and run the project using your favorite IDE (Eclipse, IntelliJ IDEA, Net
  ![Image_Alt](https://github.com/sivakalyani123/Hospital_Mangement_system_URK23CS7036/blob/d75fe2936629a4c699f2eacdfd72af7648fecc5b/homepage.png)
  
 
-
+**Doctor Page**
+ ![Image_Alt](https://github.com/sivakalyani123/Hospital_Mangement_system_URK23CS7036/blob/a863e1fd804854363a862ef19a18e3e680abaaf8/Doctor_page.png)
 
 **Patient Page**
- 
-**Doctor Page**
- 
+ ![Image_Alt](https://github.com/sivakalyani123/Hospital_Mangement_system_URK23CS7036/blob/a863e1fd804854363a862ef19a18e3e680abaaf8/patient_page.png)
+
 **Appointments Page**
  ![Image_Alt](https://github.com/sivakalyani123/Hospital_Mangement_system_URK23CS7036/blob/4a964c2fe011558d919dc2c884384173a735775f/Appointment_page.png)
 
