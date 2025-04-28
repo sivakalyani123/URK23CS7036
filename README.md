@@ -1,9 +1,11 @@
-**Clinical Management System
-📋 Project Overview**
+**Clinical Management System**
+
+**📋 Project Overview**
 The Clinical Management System is a simple Java Swing-based desktop application that allows users to manage clinical activities such as managing patients, doctors, and appointments.
 It provides a graphical interface with buttons and icons to navigate between different sections.
 
 **🛠️ Technologies Used**
+
 Java (JDK 8 or later)
 Java Swing for GUI development
 
