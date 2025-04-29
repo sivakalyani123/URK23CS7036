@@ -90,13 +90,6 @@ class PatientPanel extends JPanel {
         add(tableScrollPane, BorderLayout.CENTER);
     }
     
-    // Add this method to clear form fields
-    private void clearFields() {
-        nameField.setText("");
-        ageField.setText("");
-        genderCombo.setSelectedIndex(0);
-        contactField.setText("");
-    }
     
     private void savePatient() {
         try {
@@ -127,7 +120,7 @@ class PatientPanel extends JPanel {
             
             try {
                 // Load JDBC driver and connect to database
-                Class.forName("com.mysql.cj.jdbc.Driver"); // Updated to new driver class
+                Class.forName("com.mysql.jdbc.Driver");
                 conn = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/hospital_db", "root", "123sivasekar@");
                 
@@ -148,7 +141,7 @@ class PatientPanel extends JPanel {
                     
                     JOptionPane.showMessageDialog(this, "Patient saved successfully", 
                                                  "Success", JOptionPane.INFORMATION_MESSAGE);
-                    clearFields(); // Clear fields after successful save
+                    createPatientTable();
                     refreshPatientTable();
                 } else {
                     JOptionPane.showMessageDialog(this, "Failed to save patient", 
@@ -204,12 +197,12 @@ class PatientPanel extends JPanel {
         
         try {
             // Load JDBC driver and connect to database
-            Class.forName("com.mysql.cj.jdbc.Driver"); // Updated to new driver class
+            Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/hospital_db", "root", "123sivasekar@");
             
             stmt = conn.createStatement();
-            rs = stmt.executeQuery("SELECT id, name, age, gender, contact FROM patients");
+            rs = ((java.sql.Statement) stmt).executeQuery("SELECT id, name, age, gender, contact FROM patients");
             
             while(rs.next()) {
                 model.addRow(new Object[]{
